@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhayu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-17 12:56:47 PM"/>
+        <attribute name="created" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTU7MDk6MjA6MTYgUE07Mjc2MQ=="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTc7MTI6NTY6NDcgUE07ODsyODg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Mencari akar - akar dari persamaan kuadrat bentuk ax^2 + bx + c = 0&quot;" newline="True"/>
+            <declare name="a, b, c, D" type="Integer" array="False" size=""/>
+            <declare name="X1, X2" type="Real" array="False" size=""/>
+            <comment text="a,b, dan c merupakan koefisien pada persamaan kuadrat.&#13;&#10;D merupakan nilai Diskriminan.&#13;&#10;X1 dan X2 merupakan akar-akar persamaan kuadrat."/>
+            <output expression="&quot;Masukkan Nilai a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Masukkan Nilai b&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Masukkan Nilai c&quot;" newline="True"/>
+            <input variable="c"/>
+            <output expression="&quot;Persamaan kuadratnya adalah &quot;&amp;a&amp;&quot;x^2 + &quot;&amp;b&amp;&quot;x + &quot;&amp;c&amp;&quot; = 0&quot;" newline="True"/>
+            <if expression="a=0">
+                <then>
+                    <output expression="&quot;Tidak dapat dicari akar persamaan kuadratnya karena menjadi persamaan linear&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="D" expression="b^2 - 4*a*c"/>
+                    <if expression="D=0">
+                        <then>
+                            <output expression="&quot;2 Akar Real Kembar yaitu X1 = X2&quot;" newline="True"/>
+                            <assign variable="X1" expression="-b/(2*a)"/>
+                            <output expression="&quot;Akar-akar Persamaan kuadratnya adalah X1=X2=&quot;&amp;X1" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="D&gt;0">
+                                <then>
+                                    <output expression="&quot;2 Akar Real berlainan yaitu X1 dan X2&quot;" newline="True"/>
+                                    <assign variable="X1" expression="-b/(2*a)+(sqrt(D)/(2*a))"/>
+                                    <assign variable="X2" expression="-b/(2*a)-(sqrt(D)/(2*a))"/>
+                                    <output expression="&quot;Akar-akar persamaan kuadratnya yaitu X1=&quot;&amp;X1 &amp;&quot; dan X2=&quot;&amp;X2" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Akar Imaginer&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <declare name="CobaLagi" type="String" array="False" size=""/>
+            <output expression="&quot;Apakah ingin mencoba lagi? (Ya/Tidak) [pastikan penulisan (Ya/Tidak) diawali huruf besar]&quot;" newline="True"/>
+            <input variable="CobaLagi"/>
+            <while expression="CobaLagi=&quot;Ya&quot;">
+                <call expression="LOOP"/>
+            </while>
+            <output expression="&quot;Terima Kasih sudah menggunakan jasa ini&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="LOOP" type="String" variable="CobaLagi">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, D" type="Integer" array="False" size=""/>
+            <declare name="X1, X2" type="Real" array="False" size=""/>
+            <comment text="a,b, dan c merupakan koefisien pada persamaan kuadrat.&#13;&#10;D merupakan nilai Diskriminan.&#13;&#10;X1 dan X2 merupakan akar-akar persamaan kuadrat."/>
+            <output expression="&quot;Masukkan Nilai a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Masukkan Nilai b&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Masukkan Nilai c&quot;" newline="True"/>
+            <input variable="c"/>
+            <output expression="&quot;Persamaan kuadratnya adalah &quot;&amp;a&amp;&quot;x^2 + &quot;&amp;b&amp;&quot;x + &quot;&amp;c&amp;&quot; = 0&quot;" newline="True"/>
+            <if expression="a=0">
+                <then>
+                    <output expression="&quot;Tidak dapat dicari akar persamaan kuadratnya karena menjadi persamaan linear&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="D" expression="b^2 - 4*a*c"/>
+                    <if expression="D=0">
+                        <then>
+                            <output expression="&quot;2 Akar Real Kembar yaitu X1 = X2&quot;" newline="True"/>
+                            <assign variable="X1" expression="-b/(2*a)"/>
+                            <output expression="&quot;Akar-akar Persamaan kuadratnya adalah X1=X2=&quot;&amp;X1" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="D&gt;0">
+                                <then>
+                                    <output expression="&quot;2 Akar Real berlainan yaitu X1 dan X2&quot;" newline="True"/>
+                                    <assign variable="X1" expression="-b/(2*a)+(sqrt(D)/(2*a))"/>
+                                    <assign variable="X2" expression="-b/(2*a)-(sqrt(D)/(2*a))"/>
+                                    <output expression="&quot;Akar-akar persamaan kuadratnya yaitu X1=&quot;&amp;X1 &amp;&quot; dan X2=&quot;&amp;X2" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Akar Imaginer&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <declare name="CobaLagi" type="String" array="False" size=""/>
+            <output expression="&quot;Apakah ingin mencoba lagi? (Ya/Tidak)&quot;" newline="True"/>
+            <input variable="CobaLagi"/>
+            <if expression="CobaLagi=&quot;Ya&quot;">
+                <then/>
+                <else>
+                    <output expression="&quot;Terima Kasih sudah menggunakan jasa ini&quot;" newline="True"/>
+                    <breakpoint/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

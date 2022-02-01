@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhayu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-17 03:21:28 PM"/>
+        <attribute name="created" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTc7MDI6NTk6NDYgUE07Mjc3MQ=="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTc7MDM6MDA6MjYgUE07MTtiaGF5dTtMQVBUT1AtMjdHNTgzMTY7MjAyMS0wMy0xNzswMToxMzo0MiBQTTtCaWxhbmdhbiBBc2xpLmZwcmc7NzQzNg=="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTc7MDM6MjE6MjggUE07MTsyODY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Mencetak n suku pertama barisan bilangan asli, n=...&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="i" expression="1"/>
+            <do expression="i&lt;=n">
+                <output expression="i" newline="True"/>
+                <assign variable="i" expression="i+1"/>
+            </do>
+            <output expression="&quot;Finish&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

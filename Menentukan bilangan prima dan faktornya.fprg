@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhayu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-31 01:14:14 AM"/>
+        <attribute name="created" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTk7MTA6NTg6MDMgQU07Mjc0OQ=="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTk7MDI6NTk6NTkgUE07MjtiaGF5dTtMQVBUT1AtMjdHNTgzMTY7MjAyMS0wMy0xNDswNDozNjoxNCBQTTtIYXNpbCBQZW1iYWdpYW4gZGFuIHNpc2EgcGVtYmFnaWFuIG5ldy5mcHJnOzk3OTk="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMzE7MDE6MTQ6MTQgQU07NzsyODUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Faktor, Bilangan" type="Integer" array="False" size=""/>
+            <output expression="&quot;Memeriksa apakah suatu bilangan merupakan prima atau bukan&quot;" newline="True"/>
+            <output expression="&quot;Masukkan Bilangan yang ingin diperiksa..&quot;" newline="True"/>
+            <assign variable="Faktor" expression="1"/>
+            <input variable="Bilangan"/>
+            <if expression="Bilangan&gt;1">
+                <then>
+                    <do expression="Bilangan%Faktor!=0">
+                        <assign variable="Faktor" expression="Faktor+1"/>
+                    </do>
+                    <if expression="Faktor=Bilangan">
+                        <then>
+                            <output expression="Bilangan&amp; &quot; Merupakan Bilangan Prima&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="Bilangan&amp; &quot; Bukan Bilangan Prima karena habis dibagi oleh &quot;&amp;Faktor" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Bukan Bilangan Prima karena &lt;1&quot;" newline="True"/>
+                </else>
+            </if>
+            <declare name="Coba" type="String" array="False" size=""/>
+            <output expression="&quot;Apakah ingin mencoba lagi? (Y/T)&quot;" newline="True"/>
+            <input variable="Coba"/>
+            <while expression="Coba=&quot;Y&quot;">
+                <call expression="Ulangi"/>
+            </while>
+            <while expression="Coba!=&quot;T&quot;">
+                <output expression="&quot;Silahkan Masukkan Huruf Y/T&quot;" newline="True"/>
+                <input variable="Coba"/>
+                <while expression="Coba=&quot;Y&quot;">
+                    <call expression="Ulangi"/>
+                </while>
+            </while>
+            <output expression="&quot;Terima Kasih sudah memakai jasa ini&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="Ulangi" type="String" variable="Coba">
+        <parameters/>
+        <body>
+            <declare name="Faktor, Bilangan" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan Bilangan yang ingin diperiksa..&quot;" newline="True"/>
+            <assign variable="Faktor" expression="1"/>
+            <input variable="Bilangan"/>
+            <if expression="Bilangan&gt;1">
+                <then>
+                    <do expression="Bilangan%Faktor!=0">
+                        <assign variable="Faktor" expression="Faktor+1"/>
+                    </do>
+                    <if expression="Faktor=Bilangan">
+                        <then>
+                            <output expression="Bilangan&amp; &quot; Merupakan Bilangan Prima&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="Bilangan&amp; &quot; Bukan Bilangan Prima karena habis dibagi oleh &quot;&amp;Faktor" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Bukan Bilangan Prima karena &lt;1&quot;" newline="True"/>
+                </else>
+            </if>
+            <declare name="Coba" type="String" array="False" size=""/>
+            <output expression="&quot;Apakah ingin mencoba lagi? (Y/T)&quot;" newline="True"/>
+            <input variable="Coba"/>
+            <if expression="Coba = &quot;Y&quot;">
+                <then/>
+                <else>
+                    <while expression="Coba!=&quot;T&quot;">
+                        <output expression="&quot;Silahkan Masukkan Huruf Y/T&quot;" newline="True"/>
+                        <input variable="Coba"/>
+                        <while expression="Coba=&quot;Y&quot;">
+                            <call expression="Ulangi"/>
+                        </while>
+                    </while>
+                    <output expression="&quot;Terima Kasih sudah memakai jasa ini&quot;" newline="True"/>
+                    <breakpoint/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

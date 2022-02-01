@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhayu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-19 10:57:52 AM"/>
+        <attribute name="created" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTg7MDg6NDk6MDQgUE07Mjc3MQ=="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTk7MTA6NTc6NTIgQU07MzsyODYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Memeriksa suatu angka merupakan bilangan prima atau bukan&quot;" newline="True"/>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <comment text="a merupakan angka yang dicek&#13;&#10;b merupakan Pembagi&#13;&#10;c merupakan faktor"/>
+            <assign variable="b" expression="3"/>
+            <assign variable="c" expression="0"/>
+            <output expression="&quot;Masukkan angka yang akan diperikasa..&quot;" newline="True"/>
+            <input variable="a"/>
+            <if expression="a&gt;1">
+                <then>
+                    <if expression="a=2">
+                        <then>
+                            <output expression="&quot;Bilangan prima&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="a%2=0">
+                                <then>
+                                    <output expression="&quot;Bukan Bilangan Prima sebab habis dibagi 2&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="a/b=0">
+                                        <then>
+                                            <if expression="a=b">
+                                                <then>
+                                                    <output expression="&quot;Bilangan prima&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Bukan Bilangan Prima&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <for variable="b" start="1" end="a" direction="inc" step="1">
+                                                <if expression="a%b=0">
+                                                    <then>
+                                                        <assign variable="c" expression="c+1"/>
+                                                    </then>
+                                                    <else/>
+                                                </if>
+                                            </for>
+                                            <if expression="c=2">
+                                                <then>
+                                                    <output expression="&quot;Bilangan Prima&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Bukan Bilangan Prima sebab habis dibagi &quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Bukan bilangan prima&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

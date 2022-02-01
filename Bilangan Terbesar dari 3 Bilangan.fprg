@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhayu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-24 03:22:37 PM"/>
+        <attribute name="created" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTQ7MDc6MzY6MTcgQU07Mjc1MQ=="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDQtMjQ7MDM6MjI6MzcgUE07NTsyODcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Pencarian nilai terbesar dari bilangan : 85, 90, 76, 88&quot;" newline="True"/>
+            <declare name="a, b, c, d, p, n, i, j" type="Real" array="False" size=""/>
+            <assign variable="a" expression="85"/>
+            <assign variable="b" expression="90"/>
+            <assign variable="c" expression="76"/>
+            <assign variable="d" expression="88"/>
+            <assign variable="n" expression="4"/>
+            <output expression="&quot;Data nilai yang akan diurutkan :&quot; &amp; a &amp; b &amp; c &amp; d" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <for variable="j" start="0" end="n-1-i" direction="inc" step="1">
+                    <if expression="a &gt; b">
+                        <then>
+                            <assign variable="p" expression="b"/>
+                            <assign variable="b" expression="a"/>
+                            <assign variable="a" expression="p"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <output expression="&quot;Urutan dari yang terkecil adalah &quot;  &amp; c &amp; a &amp; d &amp; b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

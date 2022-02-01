@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhayu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-15 05:40:05 PM"/>
+        <attribute name="created" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTQ7MDQ6MzY6MTQgUE07Mjc2MA=="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTU7MDU6NDA6MDUgUE07NjsyODcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Menghitung Hasil bagi dan sisa pembagian 2 bilangan&quot;" newline="True"/>
+            <declare name="a, b, c, d" type="Real" array="False" size=""/>
+            <comment text="a merupakan bilangan pertama&#13;&#10;b merupakan bilangan kedua&#13;&#10;c merupakan sisa pembagian dari a dan b&#13;&#10;d merupakan hasil pembagian dari a dan b"/>
+            <output expression="&quot;Masukkan bilangan pertama&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Masukkan bilangan kedua&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a&gt;0 and b&gt;0">
+                <then>
+                    <if expression="a=0 or b=0">
+                        <then>
+                            <output expression="&quot;Suatu bilangan yang dibagi 0 maka tak terdefinisi&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="a&gt;b">
+                                <then>
+                                    <assign variable="d" expression="a/b"/>
+                                    <assign variable="c" expression="a%b"/>
+                                    <output expression="&quot;Hasil Pembagiannya adalah &quot; &amp; d &amp; &quot; Sisa baginya adalah &quot; &amp; c" newline="True"/>
+                                </then>
+                                <else>
+                                    <assign variable="d" expression="b/a"/>
+                                    <assign variable="c" expression="b%a"/>
+                                    <output expression="&quot;Hasil Pembagiannya adalah &quot; &amp; d &amp; &quot; Sisa baginya adalah &quot; &amp; c" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="a=0 or b=0">
+                        <then>
+                            <output expression="&quot;Suatu bilangan yang dibagi 0 maka tak terdefinisi&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="abs(a)&gt;abs(b)">
+                                <then>
+                                    <assign variable="d" expression="a/b"/>
+                                    <assign variable="c" expression="abs(a)%abs(b)"/>
+                                    <output expression="&quot;Hasil Pembagiannya adalah &quot; &amp; d &amp; &quot; Sisa baginya adalah &quot; &amp; c" newline="True"/>
+                                </then>
+                                <else>
+                                    <assign variable="d" expression="b/a"/>
+                                    <assign variable="c" expression="abs(b)%abs(a)"/>
+                                    <output expression="&quot;Hasil Pembagiannya adalah &quot; &amp; d &amp; &quot; Sisa baginya adalah &quot; &amp; c" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

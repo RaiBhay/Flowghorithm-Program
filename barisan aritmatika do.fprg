@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhayu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-17 03:30:47 PM"/>
+        <attribute name="created" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTc7MDM6Mjg6MTkgUE07Mjc2OA=="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTc7MDM6Mjg6MjIgUE07MTtiaGF5dTtMQVBUT1AtMjdHNTgzMTY7MjAyMS0wMy0xNzswMzoyMTo0MyBQTTtiaWxhbmdhbiBhc2xpIGRvLmZwcmc7Nzc1MQ=="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTc7MDM6MzA6NDcgUE07MTsyODcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, b, a" type="Integer" array="False" size=""/>
+            <output expression="&quot;Mencetak n suku pertama barisan aritmatika. n=...&quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;Masukkan suku pertama a=...&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Masukkan beda. b=...&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="i" expression="1"/>
+            <do expression="i&lt;=n">
+                <output expression="a+((i-1)*b)" newline="True"/>
+                <assign variable="i" expression="i+1"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

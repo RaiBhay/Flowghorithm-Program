@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhayu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-17 01:47:00 PM"/>
+        <attribute name="created" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTc7MDE6NDQ6NTQgUE07Mjc2Mw=="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTc7MDE6NDQ6NTcgUE07MTtiaGF5dTtMQVBUT1AtMjdHNTgzMTY7MjAyMS0wMy0xNzswMTozMjozNSBQTTtiaWxhbmdhbiBnYW5qaWwuZnByZzs3NzE3"/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTc7MDE6NDc6MDAgUE07MTsyODY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Mencetak n suku pertama bilangan genap. n=...&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <output expression="2*i" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

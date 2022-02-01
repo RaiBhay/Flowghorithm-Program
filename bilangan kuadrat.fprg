@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhayu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-17 01:57:55 PM"/>
+        <attribute name="created" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTc7MDE6NTQ6MTcgUE07Mjc2Mw=="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTc7MDE6NTQ6MjEgUE07MTtiaGF5dTtMQVBUT1AtMjdHNTgzMTY7MjAyMS0wMy0xNzswMTozMjozNSBQTTtiaWxhbmdhbiBnYW5qaWwuZnByZzs3NzA5"/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTc7MDE6NTc6NTUgUE07MTsyODc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Mencetak n suku pertama bilangan kuadrat. n=...&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="a" start="1" end="n" direction="inc" step="1">
+                <output expression="a^2" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

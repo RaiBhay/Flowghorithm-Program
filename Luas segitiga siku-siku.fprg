@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhayu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-24 03:21:56 PM"/>
+        <attribute name="created" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMjQ7MDM6MTg6MjUgUE07Mjc2Mg=="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMjQ7MDM6MjE6NTYgUE07MTsyODY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;Menentukan Luas segitiga siku-siku&quot;" newline="True"/>
+            <output expression="&quot;Masukkan panjang alas&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Masukkan alas segitiga&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="c" expression="(a*b)/2"/>
+            <output expression="&quot;Luas Segitiganya adalah &quot; &amp;c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

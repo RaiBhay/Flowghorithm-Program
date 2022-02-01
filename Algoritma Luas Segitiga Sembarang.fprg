@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhayu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-15 05:40:18 PM"/>
+        <attribute name="created" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMDM7MDM6MjY6MDYgUE07Mjc1Nw=="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTU7MDU6NDA6MTggUE07MTE7MjkxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Selamat Datang di perhitungan Luas Segitiga Sembarang&quot;" newline="True"/>
+            <declare name="Luas, a, b, c, s" type="Real" array="False" size=""/>
+            <comment text="a merupakan sisi terpanjang, b dan c merupakan sisi-sisi pada segitiga sembarang.&#13;&#10;s merupakan semiperimeter(setengah keliling segitiga)&#13;&#10;Luas Segitiga dicari menggunakan Rumus Heron"/>
+            <output expression="&quot;Panjang sisi a = ...&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Panjang sisi b = ...&quot;" newline="False"/>
+            <input variable="b"/>
+            <output expression="&quot;Panjang sisi c = ...&quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="a&gt;0 and b&gt;0 and c&gt;0">
+                <then>
+                    <if expression="a&lt;b+c and b&lt;a+c and c&lt;a+b">
+                        <then>
+                            <assign variable="s" expression="1/2*(a+b+c)"/>
+                            <comment text="Rumus semiperimeter"/>
+                            <assign variable="Luas" expression="sqrt(s*(s-a)*(s-b)*(s-c))"/>
+                            <output expression="&quot;Luas Segitiga tersebut adalah &quot; &amp; Luas" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Tidak dapat dihitung karena tidak memenuhi syarat berikut a&lt;b+c  b&lt;a+c  c&lt;a+b&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Tidak dapat dihitung luasnya karena sisi segitiga negatif&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

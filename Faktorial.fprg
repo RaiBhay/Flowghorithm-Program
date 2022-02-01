@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhayu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-24 02:41:55 PM"/>
+        <attribute name="created" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMjQ7MDI6MTQ6NDcgUE07Mjc2MQ=="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMjQ7MDI6NDE6NTUgUE07MTsyODY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Mencari hasil faktorial dari suatu bilangan&quot;" newline="True"/>
+            <declare name="a, i, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan bilangan tersebut&quot;" newline="True"/>
+            <input variable="a"/>
+            <if expression="a&gt;=0">
+                <then>
+                    <assign variable="i" expression="1"/>
+                    <while expression="i&lt;a">
+                        <assign variable="b" expression="a*i"/>
+                        <assign variable="i" expression="i+1"/>
+                    </while>
+                    <output expression="&quot;Nilai faktorial dari &quot; &amp;a&amp; &quot; adalah &quot;&amp;b" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Tidak dapat difaktorialkan&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

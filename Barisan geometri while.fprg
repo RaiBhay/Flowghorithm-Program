@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhayu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-17 02:59:42 PM"/>
+        <attribute name="created" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTc7MDI6MjA6MjEgUE07Mjc1Mg=="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTc7MDI6MjA6MjQgUE07MTtiaGF5dTtMQVBUT1AtMjdHNTgzMTY7MjAyMS0wMy0xNzswMjowMDo1MCBQTTtiaWxhbmdhbiBhc2xpIHdoaWxlLmZwcmc7ODA2NA=="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTc7MDI6NTk6NDIgUE07MTsyODc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, r, a" type="Integer" array="False" size=""/>
+            <output expression="&quot;Mencetak n suku pertama barisan geometri. n=...&quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;Masukkan suku pertama a=...&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Masukkan rasio. r=...&quot;" newline="True"/>
+            <input variable="r"/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=n">
+                <output expression="a*(r^(i-1))" newline="True"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

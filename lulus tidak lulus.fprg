@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhayu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-10 01:55:17 PM"/>
+        <attribute name="created" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTA7MDE6MjU6MTMgUE07Mjc1MA=="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMTA7MDE6NTU6MTcgUE07MTsyODY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan Nilai Mahasiswa&quot;" newline="True"/>
+            <input variable="a"/>
+            <if expression="a &lt;= 56">
+                <then>
+                    <output expression="&quot;Tidak Lulus&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Lulus&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

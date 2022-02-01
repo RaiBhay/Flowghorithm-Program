@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="bhayu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-03 03:07:14 PM"/>
+        <attribute name="created" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMDM7MDI6Mjc6NDEgUE07Mjc1Ng=="/>
+        <attribute name="edited" value="YmhheXU7TEFQVE9QLTI3RzU4MzE2OzIwMjEtMDMtMDM7MDM6MDc6MTMgUE07MTsyODYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, L" type="Real" array="False" size=""/>
+            <comment text="a,b adalah sisi-sisi persegi panjang, Dimana a merupakan panjang dan b merupakan lebar. L merupakan luas persegi panjang."/>
+            <output expression="&quot;Panjang sisi a=...&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Panjang sisi b=...&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="L" expression="a*b"/>
+            <output expression="&quot;Luas =...&quot;" newline="True"/>
+            <output expression="L" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
